@@ -511,7 +511,7 @@ ol {
   border: 1px solid var(--line-strong);
   background: var(--panel);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.02em;
   color: var(--amber);
 }
@@ -524,16 +524,16 @@ ol {
 
 .brand__name {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
 
 .brand__meta {
   font-family: var(--mono);
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
   color: var(--fg-3);
   text-transform: uppercase;
 }
@@ -792,7 +792,7 @@ body.menu-open {
   padding: var(--s-100) var(--s-50) 0;
   color: var(--fg-3);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
 }
@@ -892,7 +892,7 @@ body.menu-open {
 
 .hero-fig .lbl {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 12px;
   letter-spacing: 0.09em;
   fill: var(--fg-3);
   text-transform: uppercase;
@@ -933,7 +933,7 @@ body.menu-open {
   align-items: center;
   margin-top: var(--s-500);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--fg-3);
   text-transform: uppercase;
@@ -976,8 +976,8 @@ body.menu-open {
   align-items: center;
   justify-content: space-between;
   font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   color: var(--fg-3);
 }
 
@@ -1010,9 +1010,9 @@ body.menu-open {
   border: 1px solid var(--line);
   border-radius: var(--r-sm);
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--fg-3);
   white-space: nowrap;
 }
@@ -1024,7 +1024,7 @@ body.menu-open {
   padding-top: var(--s-200);
   border-top: 1px solid var(--line-soft);
   color: var(--fg-3);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .work-card__arrow {
@@ -1069,20 +1069,20 @@ body.menu-open {
 
 .award__year {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   color: var(--fg-3);
 }
 
 .award__title {
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
 }
 
 .award__org {
   color: var(--fg-3);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -1095,8 +1095,9 @@ body.menu-open {
   border: 1px solid var(--line);
   border-radius: var(--r-full);
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
   color: var(--fg-2);
   white-space: nowrap;
 }
@@ -1136,7 +1137,7 @@ body.menu-open {
   align-items: baseline;
   gap: var(--s-50);
   font-family: var(--mono);
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--fg);
@@ -1179,8 +1180,8 @@ body.menu-open {
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(8px);
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   color: var(--fg-2);
 }
 
@@ -1266,7 +1267,7 @@ body.menu-open {
 
 .map-cities .city-label {
   font-family: var(--font);
-  font-size: 11px;
+  font-size: 12px;
   fill: var(--fg-2);
   paint-order: stroke;
   stroke: #0a0a07;
@@ -1296,8 +1297,8 @@ body.menu-open {
   padding: var(--s-100) var(--s-200);
   border-top: 1px solid var(--line-soft);
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  letter-spacing: 0.06em;
   color: var(--fg-3);
   text-transform: uppercase;
 }
@@ -1336,7 +1337,7 @@ body.menu-open {
 
 .trip-year__label {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   color: var(--amber);
 }
@@ -1375,7 +1376,7 @@ body.menu-open {
 
 .trip__coord {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   color: var(--fg-3);
   white-space: nowrap;
@@ -1412,7 +1413,7 @@ body.menu-open {
 
 .fact-card__title {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--fg-3);
   text-transform: uppercase;
@@ -1425,7 +1426,7 @@ body.menu-open {
   gap: var(--s-200);
   padding: var(--s-100) 0;
   border-top: 1px solid var(--line-soft);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -1475,8 +1476,8 @@ body.menu-open {
   padding: var(--s-300) 0;
   cursor: pointer;
   list-style: none;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
   transition: color 0.3s var(--ease);
 }
@@ -1564,7 +1565,8 @@ body.menu-open {
   gap: var(--s-200);
   color: var(--fg-3);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
+  line-height: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -1589,13 +1591,14 @@ body.menu-open {
 }
 
 .footer__name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .footer__desc {
   color: var(--fg-3);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   max-width: 320px;
 }
 
@@ -1612,8 +1615,8 @@ body.menu-open {
 
 .footer__col h3 {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   color: var(--fg-3);
   text-transform: uppercase;
   margin-bottom: var(--s-25);
@@ -1622,7 +1625,8 @@ body.menu-open {
 
 .footer__col a {
   color: var(--fg-2);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   transition: color 0.3s var(--ease);
 }
 
@@ -1668,7 +1672,7 @@ body.menu-open {
   align-items: center;
   gap: var(--s-75);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--fg-3);
   text-transform: uppercase;
@@ -1731,8 +1735,8 @@ body.menu-open {
 
 .project__col h3 {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   color: var(--fg-3);
   text-transform: uppercase;
   margin-bottom: var(--s-100);
@@ -1772,7 +1776,8 @@ body.menu-open {
 
 .paper__venue {
   color: var(--fg-3);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   justify-self: end;
   text-align: right;
 }
@@ -1883,7 +1888,7 @@ body.menu-open {
   border-radius: var(--r-md);
   background: var(--panel);
   color: var(--fg-3);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -1941,7 +1946,7 @@ body.menu-open {
 .legal p,
 .legal li {
   color: var(--fg-2);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1955,7 +1960,7 @@ body.menu-open {
 .legal__meta {
   color: var(--fg-3);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   margin-bottom: var(--s-500);
   text-transform: uppercase;
@@ -2136,7 +2141,7 @@ body.menu-open {
   }
 
   .hero-fig .tick {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .map-scroll .map-svg {
@@ -2239,7 +2244,7 @@ body.menu-open {
   }
 
   .contact__mail {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .footer__top {
@@ -2265,7 +2270,7 @@ body.menu-open {
   }
 
   .hero-fig .lbl {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
