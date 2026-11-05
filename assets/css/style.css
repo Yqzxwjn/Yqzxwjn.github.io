@@ -4,19 +4,23 @@
    ========================================================= */
 
 :root {
-  --bg: #000000;
-  --panel: #131209;
-  --panel-2: #181818;
-  --panel-3: #1f1f1f;
-  --fg: #f4f1ea;
-  --fg-2: #b9b5ac;
-  --fg-3: #8a867d;
-  --line: rgba(244, 241, 234, 0.12);
-  --line-soft: rgba(244, 241, 234, 0.06);
-  --line-strong: rgba(244, 241, 234, 0.22);
-  --amber: #e6b36a;
-  --amber-soft: rgba(230, 179, 106, 0.14);
-  --amber-line: rgba(230, 179, 106, 0.42);
+  --bg: #f7f3ea;
+  --panel: #efe9db;
+  --panel-2: #fffdf8;
+  --panel-3: #f4efe3;
+  --fg: #1a1712;
+  --fg-2: #4f4b43;
+  --fg-3: #635d54;
+  --line: rgba(26, 23, 18, 0.14);
+  --line-soft: rgba(26, 23, 18, 0.09);
+  --line-strong: rgba(26, 23, 18, 0.26);
+  --amber: #a3601a;
+  --amber-soft: rgba(163, 96, 26, 0.10);
+  --amber-line: rgba(163, 96, 26, 0.38);
+
+  --shadow-sm: 0 1px 2px rgba(26, 23, 18, 0.05);
+  --shadow-md: 0 18px 40px -28px rgba(26, 23, 18, 0.32);
+  --shadow-lg: 0 30px 70px -45px rgba(26, 23, 18, 0.45);
 
   --font: "Geist", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC",
     "Noto Sans SC", sans-serif;
@@ -114,7 +118,7 @@ ol {
 
 ::selection {
   background: var(--amber);
-  color: #000;
+  color: #fffdf8;
 }
 
 :focus-visible {
@@ -346,7 +350,7 @@ ol {
   z-index: 200;
   padding: var(--s-75) var(--s-200);
   background: var(--amber);
-  color: #000;
+  color: #fffdf8;
   border-radius: var(--r-sm);
   font-size: 14px;
   font-weight: 600;
@@ -393,11 +397,11 @@ ol {
 
 .btn--primary {
   background: var(--amber);
-  color: #0a0a08;
+  color: #fffdf8;
 }
 
 .btn--primary:hover {
-  background: #f0c382;
+  background: #8b5417;
 }
 
 .btn--ghost {
@@ -407,7 +411,7 @@ ol {
 }
 
 .btn--ghost:hover {
-  background: rgba(244, 241, 234, 0.06);
+  background: rgba(26, 23, 18, 0.07);
   border-color: var(--line-strong);
 }
 
@@ -483,15 +487,16 @@ ol {
   padding: 0 var(--s-100) 0 var(--s-200);
   border: 1px solid var(--line);
   border-radius: var(--r-full);
-  background: rgba(10, 10, 8, 0.62);
+  background: rgba(247, 243, 234, 0.72);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: 0 10px 30px -22px rgba(26, 23, 18, 0.28);
   transition: background-color 0.4s var(--ease), border-color 0.4s var(--ease),
     transform 0.5s var(--ease);
 }
 
 .nav.is-scrolled {
-  background: rgba(6, 6, 5, 0.86);
+  background: rgba(247, 243, 234, 0.94);
   border-color: var(--line-strong);
 }
 
@@ -557,7 +562,7 @@ ol {
 
 .nav__link:hover {
   color: var(--fg);
-  background: rgba(244, 241, 234, 0.06);
+  background: rgba(26, 23, 18, 0.07);
 }
 
 .nav__link[aria-current="page"] {
@@ -643,7 +648,7 @@ ol {
   justify-content: center;
   gap: var(--s-100);
   padding: var(--s-900) var(--s-400) var(--s-600);
-  background: rgba(4, 4, 3, 0.97);
+  background: rgba(247, 243, 234, 0.97);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   opacity: 0;
@@ -723,7 +728,7 @@ body.menu-open {
 
 .hero__title {
   max-width: 680px;
-  background: linear-gradient(90deg, #ffffff 0%, #9b9b9b 100%);
+  background: linear-gradient(90deg, #000000 0%, #666666 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -773,16 +778,17 @@ body.menu-open {
   position: relative;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  background: var(--panel);
+  background: var(--panel-2);
   padding: var(--s-100);
   overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
 .figure__inner {
   border: 1px solid var(--line-soft);
   border-radius: var(--r-sm);
   overflow: hidden;
-  background: #0b0b08;
+  background: #fbf7ee;
 }
 
 .figure__caption {
@@ -812,23 +818,23 @@ body.menu-open {
 }
 
 .hero-fig .frame-bg {
-  fill: #10100b;
-  stroke: rgba(244, 241, 234, 0.2);
+  fill: #fffdf8;
+  stroke: rgba(26, 23, 18, 0.23);
   stroke-width: 1;
 }
 
 .hero-fig .room-line {
   fill: none;
-  stroke: rgba(244, 241, 234, 0.22);
+  stroke: rgba(26, 23, 18, 0.25);
   stroke-width: 1;
 }
 
 .hero-fig .room-dot {
-  fill: rgba(230, 179, 106, 0.75);
+  fill: rgba(163, 96, 26, 0.75);
 }
 
 .hero-fig .ground {
-  stroke: rgba(244, 241, 234, 0.24);
+  stroke: rgba(26, 23, 18, 0.28);
 }
 
 .hero-fig .trail {
@@ -841,12 +847,16 @@ body.menu-open {
 
 .hero-fig .ghost {
   fill: none;
-  stroke: rgba(230, 179, 106, 0.6);
+  stroke: rgba(163, 96, 26, 0.6);
   stroke-width: 1.8;
 }
 
 .hero-fig .obj {
-  fill: #f4f1ea;
+  fill: #1a1712;
+}
+
+.hero-fig .comet {
+  fill: var(--amber);
 }
 
 .hero-fig .pred {
@@ -871,7 +881,7 @@ body.menu-open {
 }
 
 .hero-fig .tick-line {
-  stroke: rgba(244, 241, 234, 0.28);
+  stroke: rgba(26, 23, 18, 0.32);
 }
 
 .hero-fig .tick-line--amber {
@@ -919,7 +929,7 @@ body.menu-open {
 
 .tagline__word {
   display: inline-block;
-  color: rgba(244, 241, 234, 0.28);
+  color: rgba(26, 23, 18, 0.32);
   transition: color 0.7s var(--ease);
 }
 
@@ -961,14 +971,16 @@ body.menu-open {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   background: var(--panel-2);
+  box-shadow: var(--shadow-sm);
   transition: transform 0.5s var(--ease), border-color 0.4s var(--ease),
-    background-color 0.4s var(--ease);
+    background-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 
 .work-card:hover {
   transform: translateY(-4px);
   border-color: var(--amber-line);
-  background: var(--panel-3);
+  background: var(--panel-2);
+  box-shadow: var(--shadow-md);
 }
 
 .work-card__top {
@@ -1041,7 +1053,7 @@ body.menu-open {
 .work-card:hover .work-card__arrow {
   background: var(--amber);
   border-color: var(--amber);
-  color: #000;
+  color: #fffdf8;
 }
 
 /* ---------- awards ---------- */
@@ -1064,7 +1076,7 @@ body.menu-open {
 }
 
 .award:hover {
-  background: rgba(244, 241, 234, 0.035);
+  background: rgba(26, 23, 18, 0.04);
 }
 
 .award__year {
@@ -1161,8 +1173,9 @@ body.menu-open {
   position: relative;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  background: #0b0b08;
+  background: var(--panel-2);
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 .travel-map img {
@@ -1177,12 +1190,12 @@ body.menu-open {
   padding: var(--s-25) var(--s-75);
   border: 1px solid var(--line);
   border-radius: var(--r-sm);
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(255, 253, 248, 0.82);
   backdrop-filter: blur(8px);
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.08em;
-  color: var(--fg-2);
+  color: var(--fg);
 }
 
 /* travel page */
@@ -1191,8 +1204,9 @@ body.menu-open {
   margin-top: var(--s-600);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  background: #0a0a07;
+  background: var(--panel-2);
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 .map-scroll {
@@ -1221,22 +1235,22 @@ body.menu-open {
 }
 
 .map-provinces .province {
-  fill: #17170f;
-  stroke: rgba(244, 241, 234, 0.16);
+  fill: #e8e1d1;
+  stroke: rgba(26, 23, 18, 0.18);
   stroke-width: 0.6;
   transition: fill 0.4s var(--ease), stroke 0.4s var(--ease);
 }
 
 .map-graticule path {
   fill: none;
-  stroke: rgba(244, 241, 234, 0.05);
+  stroke: rgba(26, 23, 18, 0.06);
   stroke-width: 0.6;
 }
 
 .map-routes .route {
   fill: none;
   stroke: var(--amber);
-  stroke-opacity: 0.36;
+  stroke-opacity: 0.5;
   stroke-width: 1.1;
   transition: stroke-opacity 0.4s var(--ease), stroke-width 0.4s var(--ease);
 }
@@ -1255,7 +1269,7 @@ body.menu-open {
 }
 
 .map-cities .city-dot {
-  fill: #0a0a07;
+  fill: #fffdf8;
   stroke: var(--amber);
   stroke-width: 1.6;
   transition: r 0.3s var(--ease), fill 0.3s var(--ease);
@@ -1270,7 +1284,7 @@ body.menu-open {
   font-size: 12px;
   fill: var(--fg-2);
   paint-order: stroke;
-  stroke: #0a0a07;
+  stroke: #fffdf8;
   stroke-width: 3px;
   stroke-linejoin: round;
   transition: fill 0.3s var(--ease);
@@ -1360,7 +1374,7 @@ body.menu-open {
 
 .trip:hover,
 .trip.is-active {
-  background: rgba(244, 241, 234, 0.04);
+  background: rgba(26, 23, 18, 0.05);
 }
 
 .trip__city {
@@ -1408,7 +1422,8 @@ body.menu-open {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   padding: var(--s-300);
-  background: var(--panel);
+  background: var(--panel-2);
+  box-shadow: var(--shadow-sm);
 }
 
 .fact-card__title {
@@ -1907,7 +1922,7 @@ body.menu-open {
   line-height: 1;
   letter-spacing: -0.04em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(230, 179, 106, 0.55);
+  -webkit-text-stroke: 1px rgba(163, 96, 26, 0.55);
 }
 
 .error-page h1 {

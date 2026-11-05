@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="王嘉宁">
-  <rect width="32" height="32" rx="7" fill="#0A0A08"/>
-  <rect x="7" y="7" width="7" height="7" rx="1.5" fill="#F4F1EA" opacity="0.55"/>
-  <rect x="18" y="7" width="7" height="7" rx="1.5" fill="#F4F1EA" opacity="0.28"/>
-  <rect x="7" y="18" width="7" height="7" rx="1.5" fill="#F4F1EA" opacity="0.28"/>
-  <rect x="18" y="18" width="7" height="7" rx="1.5" fill="#E6B36A"/>
+  <rect width="32" height="32" rx="7" fill="#FFFDF8"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="rgba(26,23,18,0.16)"/>
+  <rect x="7" y="7" width="7" height="7" rx="1.5" fill="#1A1712" opacity="0.55"/>
+  <rect x="18" y="7" width="7" height="7" rx="1.5" fill="#1A1712" opacity="0.28"/>
+  <rect x="7" y="18" width="7" height="7" rx="1.5" fill="#1A1712" opacity="0.28"/>
+  <rect x="18" y="18" width="7" height="7" rx="1.5" fill="#A3601A"/>
 </svg>

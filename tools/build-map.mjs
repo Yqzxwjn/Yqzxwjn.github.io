@@ -186,17 +186,17 @@ const svgInline = `<svg class="map-svg" viewBox="0 0 ${W} ${H}" role="img" aria-
 </svg>`;
 
 const previewLand = provinces
-  .map((p) => `<path d="${p.d}" fill="#202016" stroke="rgba(244,241,234,0.26)" stroke-width="0.6"/>`)
+  .map((p) => `<path d="${p.d}" fill="#e9e2d2" stroke="rgba(26,23,18,0.22)" stroke-width="0.6"/>`)
   .join('');
 const previewDots = pts
   .map(
     (c) =>
-      `<circle cx="${c.x}" cy="${c.y}" r="${c.id === 'taiyuan' ? 4 : 3}" fill="#0A0A07" stroke="#E6B36A" stroke-width="1.6"/>`
+      `<circle cx="${c.x}" cy="${c.y}" r="${c.id === 'taiyuan' ? 4 : 3}" fill="#fffdf8" stroke="#A3601A" stroke-width="1.6"/>`
   )
   .join('');
 const preview = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
   <g>${previewLand}</g>
-  ${routes.map((r) => `<path d="${r.d}" fill="none" stroke="#E6B36A" stroke-opacity="0.5" stroke-width="1.2"/>`).join('')}
+  ${routes.map((r) => `<path d="${r.d}" fill="none" stroke="#A3601A" stroke-opacity="0.5" stroke-width="1.2"/>`).join('')}
   ${previewDots}
 </svg>`;
 
