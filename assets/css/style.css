@@ -708,7 +708,7 @@ body.menu-open {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 520px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
   gap: var(--s-600);
   align-items: center;
 }
@@ -1980,7 +1980,16 @@ body.menu-open {
   }
 
   .hero__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 42%);
     gap: var(--s-500);
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__copy {
+    max-width: 620px;
   }
 
   .work-grid {
