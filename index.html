@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>王嘉宁 · 视觉识别与世界模型 | 中北大学</title>
+    <meta
+      name="description"
+      content="王嘉宁，中北大学软件工程专业学生，研究视觉识别与世界模型。这里收录他的研究项目、获奖记录与旅行轨迹。"
+    />
+    <link rel="canonical" href="https://yqzxwjn.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="王嘉宁" />
+    <meta property="og:title" content="王嘉宁 · 视觉识别与世界模型" />
+    <meta
+      property="og:description"
+      content="研究中北大学的视觉识别与世界模型。研究项目、获奖记录与旅行轨迹。"
+    />
+    <meta property="og:url" content="https://yqzxwjn.github.io/" />
+    <meta property="og:image" content="https://yqzxwjn.github.io/assets/img/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "王嘉宁",
+        "alternateName": "Wang Jianing",
+        "url": "https://yqzxwjn.github.io/",
+        "email": "mailto:2613042921@st.nuc.edu.cn",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "中北大学"
+        },
+        "knowsAbout": ["视觉识别", "世界模型", "计算机视觉", "深度学习"],
+        "sameAs": ["https://github.com/Yqzxwjn"]
+      }
+    </script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="/" aria-label="王嘉宁，回到首页">
+          <span class="brand__mark" aria-hidden="true">WJ</span>
+          <span class="brand__text">
+            <span class="brand__name">王嘉宁</span>
+            <span class="brand__meta">视觉识别 / 世界模型</span>
+          </span>
+        </a>
+        <div class="nav__links">
+          <a class="nav__link" href="#work">研究</a>
+          <a class="nav__link" href="#awards">获奖</a>
+          <a class="nav__link" href="/travel.html">旅行</a>
+          <a class="nav__link" href="#about">关于</a>
+          <a class="nav__link" href="/resume.html">简历</a>
+        </div>
+        <div class="nav__right">
+          <a class="btn btn--ghost btn--sm" href="mailto:2613042921@st.nuc.edu.cn">邮件联系</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+            <span class="visually-hidden">打开菜单</span>
+            <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="menu-panel" id="menu-panel" aria-hidden="true">
+      <a class="menu-panel__link" style="--i: 0" href="#work">研究 <span>01</span></a>
+      <a class="menu-panel__link" style="--i: 1" href="#awards">获奖 <span>02</span></a>
+      <a class="menu-panel__link" style="--i: 2" href="/travel.html">旅行 <span>03</span></a>
+      <a class="menu-panel__link" style="--i: 3" href="#about">关于 <span>04</span></a>
+      <a class="menu-panel__link" style="--i: 4" href="/resume.html">简历 <span>05</span></a>
+      <div class="menu-panel__foot">
+        <a class="mono" href="mailto:2613042921@st.nuc.edu.cn">2613042921@st.nuc.edu.cn</a>
+        <span>中北大学 · 软件工程 · 太原</span>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow hero__eyebrow">中北大学 · 软件工程 · 视觉识别</p>
+            <h1 class="heading-1 hero__title">让机器看懂画面，<br />并预判下一帧。</h1>
+            <p class="body-3 hero__sub">
+              我是王嘉宁，中北大学软件工程专业的学生。研究视觉识别与世界模型：先从图像里抽取结构，再让模型沿着时间推演，接下来会发生什么。
+            </p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary" href="#work">
+                看我的研究
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+              <a class="btn btn--ghost" href="mailto:2613042921@st.nuc.edu.cn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="m3.5 7.5 8.5 6 8.5-6" /></svg>
+                邮件联系
+              </a>
+            </div>
+            <p class="hero__proof">
+              <span><b>2</b> 篇论文在投</span><span class="sep"></span>
+              <span><b>3</b> 项省级以上奖项</span><span class="sep"></span>
+              <span><b>14</b> 座城市</span>
+            </p>
+          </div>
+
+          <figure class="figure" data-reveal data-reveal-delay="120">
+            <div class="figure__inner">
+              <svg class="hero-fig" viewBox="0 0 720 464" role="img" aria-labelledby="figTitle figDesc">
+                <title id="figTitle">时序推演示意图</title>
+                <desc id="figDesc">同一场景中，一个物体在前三帧的位置与检测框，虚线标出模型预测的下一帧位置。</desc>
+                <text x="24" y="30" class="lbl lbl-amber">FIG. 01</text>
+                <text x="92" y="30" class="lbl">时序推演 / TEMPORAL PREDICTION</text>
+                <text x="696" y="30" text-anchor="end" class="lbl">LATENT STEP 8 / 8</text>
+
+                <defs>
+                  <clipPath id="sceneClip">
+                    <rect x="25" y="57" width="670" height="310" rx="7" />
+                  </clipPath>
+                </defs>
+                <rect x="24" y="56" width="672" height="312" rx="8" class="frame-bg" />
+                <g clip-path="url(#sceneClip)">
+                  <rect x="25" y="318" width="670" height="49" fill="#0b0b08" />
+
+                <!-- room -->
+                <rect x="96" y="116" width="118" height="78" class="room-line" />
+                <line x1="155" y1="116" x2="155" y2="194" class="room-line" />
+                <line x1="96" y1="155" x2="214" y2="155" class="room-line" />
+                <rect x="596" y="140" width="64" height="178" class="room-line" />
+                <circle cx="648" cy="232" r="2.5" class="room-dot" />
+                <rect x="500" y="270" width="48" height="48" rx="3" class="room-line" />
+
+                <!-- ground -->
+                <line x1="48" y1="318" x2="672" y2="318" class="ground" />
+
+                <!-- trail -->
+                <path d="M170 302 Q 305 286 440 296" class="trail" />
+
+                <!-- t-2 -->
+                <g class="past">
+                  <circle cx="170" cy="302" r="16" class="ghost" />
+                  <rect x="146" y="278" width="48" height="48" class="box box--faint" />
+                  <line x1="170" y1="318" x2="170" y2="328" class="tick-line" />
+                  <text x="170" y="352" text-anchor="middle" class="tick">t − 2</text>
+                </g>
+
+                <!-- t-1 -->
+                <g class="past">
+                  <circle cx="260" cy="300" r="16" class="ghost" />
+                  <rect x="236" y="276" width="48" height="48" class="box box--faint" />
+                  <line x1="260" y1="318" x2="260" y2="328" class="tick-line" />
+                  <text x="260" y="352" text-anchor="middle" class="tick">t − 1</text>
+                </g>
+
+                <!-- t -->
+                <g>
+                  <circle cx="350" cy="298" r="16" class="obj" />
+                  <rect x="326" y="274" width="48" height="48" class="box" />
+                  <line x1="350" y1="318" x2="350" y2="328" class="tick-line" />
+                  <text x="350" y="352" text-anchor="middle" class="tick">t</text>
+                </g>
+
+                <!-- predicted -->
+                <g>
+                  <circle cx="440" cy="296" r="16" class="pred" />
+                  <rect x="416" y="272" width="48" height="48" class="box box--pred" />
+                  <line x1="440" y1="318" x2="440" y2="328" class="tick-line tick-line--amber" />
+                  <text x="440" y="352" text-anchor="middle" class="tick tick--amber">t + 1 / 预测</text>
+                </g>
+
+                </g>
+
+                <line x1="24" y1="404" x2="696" y2="404" stroke="rgba(244,241,234,0.08)" />
+                <text x="24" y="436" class="lbl">ENC 24 × 24 · STEPS 8 · ERR 0.042</text>
+                <text x="696" y="436" text-anchor="end" class="lbl">实线 观测 · 虚线 预测</text>
+              </svg>
+            </div>
+            <figcaption class="figure__caption">
+              <span>给定三帧观测，模型预测下一帧</span>
+              <span>FIG. 01 / 2026</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- TAGLINE -->
+      <section class="tagline">
+        <div class="container">
+          <p class="tagline__text" data-tagline>
+            <span class="tagline__word" data-word-index="0">看见的</span><span class="tagline__word" data-word-index="1">是</span><span class="tagline__word" data-word-index="2">一帧</span><span class="tagline__word" data-word-index="3">画面，</span><br />
+            <span class="tagline__word" data-word-index="4">推演的</span><span class="tagline__word" data-word-index="5">是</span><span class="tagline__word" data-word-index="6">世界的</span><span class="tagline__word" data-word-index="7">下一步。</span>
+          </p>
+          <p class="tagline__note">研究笔记 · 视觉识别与世界模型</p>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="eyebrow">01 — 研究</span>
+              <h2 class="heading-2" data-reveal>三个正在推进的问题</h2>
+            </div>
+            <a class="link-arrow" href="/research.html">
+              全部研究
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+          </div>
+
+          <div class="work-grid">
+            <a class="work-card" href="/research.html#lowlight" data-reveal>
+              <div class="work-card__top">
+                <span class="work-card__index">01</span>
+                <span>2025 — 至今</span>
+              </div>
+              <h3 class="work-card__title">低照度条件下的目标识别</h3>
+              <p class="work-card__desc">
+                把夜间监控里丢掉的纹理找回来，让检测器在 5 lux 的走廊里仍然稳定。
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Retinex</span>
+                <span class="tag">频域先验</span>
+                <span class="tag">目标检测</span>
+              </div>
+              <div class="work-card__foot">
+                <span>论文在投 · 第一作者</span>
+                <span class="work-card__arrow">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                </span>
+              </div>
+            </a>
+
+            <a class="work-card" href="/research.html#worldmodel" data-reveal data-reveal-delay="80">
+              <div class="work-card__top">
+                <span class="work-card__index">02</span>
+                <span>2026</span>
+              </div>
+              <h3 class="work-card__title">动作条件的世界模型</h3>
+              <p class="work-card__desc">
+                给定当前画面和一个动作，预测未来 8 帧的潜变量轨迹，用来在抓取之前先推演一遍。
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Latent Dynamics</span>
+                <span class="tag">世界模型</span>
+                <span class="tag">MuJoCo</span>
+              </div>
+              <div class="work-card__foot">
+                <span>独立研究 · 进行中</span>
+                <span class="work-card__arrow">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                </span>
+              </div>
+            </a>
+
+            <a class="work-card" href="/research.html#inspection" data-reveal data-reveal-delay="160">
+              <div class="work-card__top">
+                <span class="work-card__index">03</span>
+                <span>2025</span>
+              </div>
+              <h3 class="work-card__title">多模态巡检机器人</h3>
+              <p class="work-card__desc">
+                可见光与红外双路输入，在边缘设备上完成表计读数与异常发热定位。
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">多模态融合</span>
+                <span class="tag">Jetson</span>
+                <span class="tag">ROS 2</span>
+              </div>
+              <div class="work-card__foot">
+                <span>竞赛项目 · 队长</span>
+                <span class="work-card__arrow">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="section" id="awards">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="eyebrow">02 — 获奖</span>
+              <h2 class="heading-2" data-reveal>奖项与荣誉</h2>
+            </div>
+            <span class="mono dim" style="font-size: 12px">2024 — 2026 / 5 项</span>
+          </div>
+
+          <div class="awards" data-reveal>
+            <div class="award">
+              <span class="award__year">2026</span>
+              <h3 class="award__title">中国大学生计算机设计大赛 · 国家级二等奖</h3>
+              <p class="award__org">作品：低照度视觉增强与检测系统</p>
+              <span class="award__badge">国家级</span>
+            </div>
+            <div class="award">
+              <span class="award__year">2025</span>
+              <h3 class="award__title">全国大学生数学建模竞赛 · 省级一等奖</h3>
+              <p class="award__org">题目：基于时序特征的异常检测建模</p>
+              <span class="award__badge">省级</span>
+            </div>
+            <div class="award">
+              <span class="award__year">2025</span>
+              <h3 class="award__title">“挑战杯”山西省大学生课外学术科技作品竞赛 · 省级二等奖</h3>
+              <p class="award__org">作品：红外与可见光融合的巡检装置</p>
+              <span class="award__badge">省级</span>
+            </div>
+            <div class="award">
+              <span class="award__year">2024</span>
+              <h3 class="award__title">蓝桥杯全国软件和信息技术专业人才大赛 · 省级一等奖</h3>
+              <p class="award__org">C++ 程序设计赛道</p>
+              <span class="award__badge">省级</span>
+            </div>
+            <div class="award">
+              <span class="award__year">2024</span>
+              <h3 class="award__title">中北大学一等奖学金</h3>
+              <p class="award__org">软件工程专业</p>
+              <span class="award__badge">校级</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAVEL -->
+      <section class="section band" id="travel">
+        <div class="container travel-grid">
+          <div data-reveal>
+            <span class="eyebrow">03 — 旅行</span>
+            <h2 class="heading-2" style="margin-top: 16px">去过的地方，<br />和记住的细节。</h2>
+            <p class="body-3 muted" style="margin-top: 24px; max-width: 420px">
+              从太原出发，一路向北到零下二十八度的哈尔滨，也向南到冬天没有人的海边。地图上是一条折线，记忆里是一碗面、一场雨、一次错过的末班车。
+            </p>
+            <div class="travel-stats">
+              <div class="stat">
+                <p class="stat__num">14 <small>座</small></p>
+                <p class="stat__label">去过的城市</p>
+              </div>
+              <div class="stat">
+                <p class="stat__num">14 <small>个</small></p>
+                <p class="stat__label">省级行政区</p>
+              </div>
+              <div class="stat">
+                <p class="stat__num">19,240 <small>km</small></p>
+                <p class="stat__label">累计路程</p>
+              </div>
+            </div>
+            <a class="link-arrow" href="/travel.html">
+              看完整轨迹
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+          </div>
+          <a class="travel-map" href="/travel.html" data-reveal data-reveal-delay="100" aria-label="查看旅行轨迹页">
+            <img src="/assets/img/map-preview.svg" width="1000" height="720" alt="中国地图，标注了 14 座去过的城市，并按时间顺序连线" />
+            <span class="travel-map__tag">2021 — 2026 / 14 CITIES</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="eyebrow">04 — 关于</span>
+              <h2 class="heading-2" data-reveal>关于我</h2>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy" data-reveal>
+              <p class="body-3">
+                我在中北大学读软件工程，大部分时间待在实验室里，和检测器、可视化还有一堆失败的可视化结果打交道。比起把指标再抬高一个点，我更好奇它为什么偏偏在这一帧失效。
+              </p>
+              <p class="body-3">
+                最近在做低照度条件下的识别，也在尝试用世界模型预测机械臂动作之后会发生什么。看起来是两个方向，其实是同一个问题：<strong>模型对世界的理解，够不够支撑下一步。</strong>
+              </p>
+              <p class="body-3">
+                不写代码的时候，我在排下一次旅行，或者在去车站的路上。
+              </p>
+              <div class="skill-chips">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">CUDA</span>
+                <span class="tag">ROS 2</span>
+                <span class="tag">LaTeX</span>
+              </div>
+            </div>
+
+            <aside class="fact-card" data-reveal data-reveal-delay="100" aria-label="基本信息">
+              <p class="fact-card__title">At a glance</p>
+              <dl style="margin: 0">
+                <div class="fact-row">
+                  <dt>所在地</dt>
+                  <dd>太原，山西</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>学校</dt>
+                  <dd>中北大学</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>方向</dt>
+                  <dd>视觉识别 / 世界模型</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>状态</dt>
+                  <dd>开放合作与实习</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>邮箱</dt>
+                  <dd><a href="mailto:2613042921@st.nuc.edu.cn">2613042921@st.nuc.edu.cn</a></dd>
+                </div>
+                <div class="fact-row">
+                  <dt>GitHub</dt>
+                  <dd><a href="https://github.com/Yqzxwjn" rel="me noopener">@Yqzxwjn</a></dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="eyebrow">05 — 常见问题</span>
+              <h2 class="heading-2" data-reveal>可能会想问的</h2>
+            </div>
+          </div>
+
+          <div class="faq" data-reveal>
+            <details class="faq-item">
+              <summary>你现在主要在研究什么？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                低照度图像增强与目标检测，以及动作条件下的世界模型。前者关心“看不清的时候还能不能认出来”，后者关心“知道动作之后，能不能先推演出结果”。
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>可以在你的项目上合作吗？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                可以。数据标注、复现实验、工程实现都愿意参与，前提是问题本身足够具体。写信时说明你手上的数据和想验证的假设，会比一句“有兴趣合作”有用得多。
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>你的代码开源吗？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                部分项目整理后会放到 GitHub。现在公开的还不多，如果你需要某个具体实现，可以直接写信，我通常会把手上的版本发过去。
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>接受分享或访谈吗？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                接受。学生社团的技术分享、课程嘉宾、媒体采访都可以聊，提前两周告诉我主题和时间就好。
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>这个网站是怎么做的？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                手写的 HTML、CSS 和 JavaScript，没有框架，也没有构建步骤。旅行地图是把中国行政区划数据做等面积圆锥投影后生成的 SVG，站点托管在 GitHub Pages 上。
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>网站上的内容多久更新一次？<span class="plus" aria-hidden="true"></span></summary>
+              <div class="faq-item__body body-6">
+                没有固定节奏。有新论文、新城市或者新的失败经验时会更新，最近一次整理是 2026 年 11 月。
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="container contact__inner" data-reveal>
+          <span class="eyebrow">06 — 联系</span>
+          <h2 class="heading-2 contact__title">如果你也在想同样的问题，<br />我们可以聊聊。</h2>
+          <a class="contact__mail" href="mailto:2613042921@st.nuc.edu.cn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="m3.5 7.5 8.5 6 8.5-6" /></svg>
+            2613042921@st.nuc.edu.cn
+          </a>
+          <button class="link-arrow" type="button" data-copy="2613042921@st.nuc.edu.cn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h8" /></svg>
+            <span data-copy-label>复制邮箱地址</span>
+          </button>
+          <p class="contact__meta">
+            <span>太原 · UTC+8</span>
+            <span>通常在 24 小时内回信</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <span class="footer__name">王嘉宁 · Wang Jianing</span>
+            <span class="footer__desc">视觉识别与世界模型。中北大学软件工程。</span>
+          </div>
+          <div class="footer__cols">
+            <div class="footer__col">
+              <h3>页面</h3>
+              <a href="#work">研究</a>
+              <a href="#awards">获奖</a>
+              <a href="/travel.html">旅行</a>
+              <a href="/resume.html">简历</a>
+            </div>
+            <div class="footer__col">
+              <h3>联系</h3>
+              <a href="mailto:2613042921@st.nuc.edu.cn">邮件</a>
+              <a href="https://github.com/Yqzxwjn" rel="noopener">GitHub</a>
+              <a href="/resume.html">简历</a>
+            </div>
+            <div class="footer__col">
+              <h3>其他</h3>
+              <a href="/privacy.html">隐私说明</a>
+              <a href="/terms.html">使用条款</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> 王嘉宁。保留所有权利。</span>
+          <span class="mono">HANDWRITTEN HTML / CSS / JS · GITHUB PAGES</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
