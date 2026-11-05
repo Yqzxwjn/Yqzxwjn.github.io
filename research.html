@@ -6,13 +6,13 @@
     <title>研究 · 王嘉宁</title>
     <meta
       name="description"
-      content="王嘉宁的研究项目：低照度目标识别、动作条件的世界模型、多模态巡检机器人，以及在投论文与开放问题。"
+      content="王嘉宁的研究项目、论文与开放问题。"
     />
     <link rel="canonical" href="https://yqzxwjn.github.io/research.html" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="研究 · 王嘉宁" />
-    <meta property="og:description" content="低照度目标识别、动作条件的世界模型、多模态巡检机器人。" />
+    <meta property="og:description" content="研究项目、论文与开放问题。" />
     <meta property="og:url" content="https://yqzxwjn.github.io/research.html" />
     <meta property="og:image" content="https://yqzxwjn.github.io/assets/img/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -67,7 +67,8 @@
       </div>
     </div>
 
-    <main id="main">
+        <main id="main">
+      <!-- 研究页。每个项目是一个 <article class="project">，id 要和首页卡片的链接对应。 -->
       <header class="page-hero">
         <div class="container">
           <nav class="breadcrumb" aria-label="面包屑">
@@ -78,118 +79,94 @@
           <p class="eyebrow" style="margin-top: 32px">01 — 研究</p>
           <h1 class="heading-1 page-hero__title">从一帧画面，<br />到世界的下一步。</h1>
           <p class="body-3 page-hero__sub">
-            我的工作大多围绕同一个问题：模型从图像里拿到的结构，够不够它推演接下来会发生什么。下面是三个具体的项目，和两个还在想的开放问题。
+            这里放我参与的项目，每个都按问题、方法、结果拆开写，末尾是论文和几个还没想清楚的问题。
           </p>
         </div>
       </header>
 
       <div class="container">
-        <article class="project" id="lowlight">
+        <article class="project" id="project-1">
           <aside class="project__aside">
             <span class="project__num">P.01</span>
             <div class="project__meta">
-              <span>2025 — 至今</span>
-              <span>第一作者</span>
-              <span>论文在投</span>
+              <span class="ph">年份</span>
+              <span class="ph">你的角色</span>
+              <span class="ph">状态</span>
             </div>
           </aside>
           <div class="project__body">
-            <h2 class="heading-3">低照度条件下的目标识别</h2>
-            <p class="body-3 project__lede">
-              夜间监控的照度经常低于 5 lux。纹理和颜色同时丢掉之后，检测器不是看不到人，而是把阴影看成了人。
-            </p>
+            <h2 class="heading-3"><span class="ph">项目名称</span></h2>
+            <p class="body-3 project__lede"><span class="ph-text">一句话说明这个项目：问题是什么，为什么值得做。</span></p>
             <div class="project__cols">
               <div class="project__col">
                 <h3>问题</h3>
-                <p>
-                  通用的增强模型会把噪声一起放大，检测器在增强后的图上反而更容易误检。增强和检测各自优化，目标并不一致。
-                </p>
+                <p><span class="ph-text">当前的方法卡在哪里，或者你发现了什么缺口。</span></p>
               </div>
               <div class="project__col">
                 <h3>方法</h3>
-                <p>
-                  先用 Retinex 分解出照度图，再在频域上约束高频细节的恢复；增强网络与检测头联合训练，让恢复出来的纹理必须真的帮到检测。
-                </p>
+                <p><span class="ph-text">你做了什么，关键的设计选择是什么。</span></p>
               </div>
               <div class="project__col">
                 <h3>结果</h3>
-                <p>
-                  在 ExDark 和自建的夜间数据集上，mAP 比基线高 3.2 个点；1080p 输入下推理保持 24 FPS，可以在边缘设备上跑。
-                </p>
+                <p><span class="ph-text">可验证的数字、结论，或者失败的经验。</span></p>
               </div>
             </div>
           </div>
         </article>
 
-        <article class="project" id="worldmodel">
+        <article class="project" id="project-2">
           <aside class="project__aside">
             <span class="project__num">P.02</span>
             <div class="project__meta">
-              <span>2026</span>
-              <span>独立研究</span>
-              <span>进行中</span>
+              <span class="ph">年份</span>
+              <span class="ph">你的角色</span>
+              <span class="ph">状态</span>
             </div>
           </aside>
           <div class="project__body">
-            <h2 class="heading-3">动作条件的世界模型</h2>
-            <p class="body-3 project__lede">
-              机械臂在抓之前，最好先在心里推演一遍。像素级预测太贵，潜空间预测又容易把接触瞬间的细节抹平。
-            </p>
+            <h2 class="heading-3"><span class="ph">项目名称</span></h2>
+            <p class="body-3 project__lede"><span class="ph-text">一句话说明这个项目：问题是什么，为什么值得做。</span></p>
             <div class="project__cols">
               <div class="project__col">
                 <h3>问题</h3>
-                <p>
-                  同样的当前画面，不同动作应该通向不同的未来。大多数潜动力学模型对动作条件不敏感，预测出来的轨迹几乎一样。
-                </p>
+                <p><span class="ph-text">当前的方法卡在哪里，或者你发现了什么缺口。</span></p>
               </div>
               <div class="project__col">
                 <h3>方法</h3>
-                <p>
-                  在 Dreamer 风格的潜动力学上加一项动作对比损失，让不同动作在潜空间里可分；用 MuJoCo 的桌面抓取任务验证 8 步推演。
-                </p>
+                <p><span class="ph-text">你做了什么，关键的设计选择是什么。</span></p>
               </div>
               <div class="project__col">
-                <h3>进展</h3>
-                <p>
-                  8 步预测的潜空间误差下降 18%，仿真抓取成功率从 62% 到 71%。真机还没跑，接触模型是下一步的难点。
-                </p>
+                <h3>结果</h3>
+                <p><span class="ph-text">可验证的数字、结论，或者失败的经验。</span></p>
               </div>
             </div>
           </div>
         </article>
 
-        <article class="project" id="inspection">
+        <article class="project" id="project-3">
           <aside class="project__aside">
             <span class="project__num">P.03</span>
             <div class="project__meta">
-              <span>2025</span>
-              <span>队长</span>
-              <span>已结题</span>
+              <span class="ph">年份</span>
+              <span class="ph">你的角色</span>
+              <span class="ph">状态</span>
             </div>
           </aside>
           <div class="project__body">
-            <h2 class="heading-3">多模态巡检机器人</h2>
-            <p class="body-3 project__lede">
-              配电房里表计多、光线差，发热点还藏在柜子后面。可见光看得清数字，红外看得见温度，两路都得要。
-            </p>
+            <h2 class="heading-3"><span class="ph">项目名称</span></h2>
+            <p class="body-3 project__lede"><span class="ph-text">一句话说明这个项目：问题是什么，为什么值得做。</span></p>
             <div class="project__cols">
               <div class="project__col">
                 <h3>问题</h3>
-                <p>
-                  两路相机的视场和分辨率都不同，先配准才能谈融合；现场没有稳定网络，模型必须整个放进边缘设备。
-                </p>
+                <p><span class="ph-text">当前的方法卡在哪里，或者你发现了什么缺口。</span></p>
               </div>
               <div class="project__col">
                 <h3>方法</h3>
-                <p>
-                  用棋盘格做一次离线标定，运行时按位姿做粗配准；读数走轻量检测加透视校正，热斑走阈值加形态学，最后在 Jetson Orin Nano 上量化部署。
-                </p>
+                <p><span class="ph-text">你做了什么，关键的设计选择是什么。</span></p>
               </div>
               <div class="project__col">
                 <h3>结果</h3>
-                <p>
-                  竞赛现场 12 个表计全部读对，热斑定位误差小于 2 厘米。装置后来被学院拿去做课程演示。
-                </p>
+                <p><span class="ph-text">可验证的数字、结论，或者失败的经验。</span></p>
               </div>
             </div>
           </div>
@@ -201,43 +178,38 @@
               <span class="eyebrow">论文</span>
               <h2 class="heading-3" id="papers-title">论文与预印本</h2>
             </div>
-            <span class="mono dim" style="font-size: 12px">2 篇 / 均在投</span>
           </div>
           <div class="paper-list">
             <div class="paper">
-              <span class="paper__year">2026</span>
-              <span class="paper__title">Low Light Object Detection with Frequency Aware Retinex</span>
-              <span class="paper__venue">在投 · 第一作者</span>
+              <span class="paper__year ph">20XX</span>
+              <span class="paper__title"><span class="ph">论文标题</span></span>
+              <span class="paper__venue"><span class="ph">状态 / 作者顺序</span></span>
             </div>
             <div class="paper">
-              <span class="paper__year">2026</span>
-              <span class="paper__title">Action Conditioned Latent Dynamics for Tabletop Manipulation</span>
-              <span class="paper__venue">在投 · 第一作者</span>
+              <span class="paper__year ph">20XX</span>
+              <span class="paper__title"><span class="ph">论文标题</span></span>
+              <span class="paper__venue"><span class="ph">状态 / 作者顺序</span></span>
             </div>
           </div>
         </section>
 
         <section class="open-questions" aria-labelledby="questions-title">
           <span class="eyebrow">开放问题</span>
-          <h2 class="heading-3" id="questions-title">两个还没想清楚的问题</h2>
+          <h2 class="heading-3" id="questions-title">还没想清楚的问题</h2>
           <ol class="question-list">
             <li>
               <span class="mono">Q1</span>
-              <p>
-                如果长时推演里误差必然累积，我们要的是更准的预测，还是更诚实的置信度？一个会说“我不确定”的模型，可能比一个自信地错下去的模型更有用。
-              </p>
+              <p><span class="ph-text">写一个你还没想清楚的问题。真实一点，比漂亮更有用。</span></p>
             </li>
             <li>
               <span class="mono">Q2</span>
-              <p>
-                视觉识别里的“结构”，到底是数据给的，还是模型自己长出来的？同一张夜间照片，人看到的是轮廓，检测器看到的是高频噪声，这中间的差在哪里，我还没有答案。
-              </p>
+              <p><span class="ph-text">再写一个。可以是方法上的，也可以是关于这个领域本身的。</span></p>
             </li>
           </ol>
         </section>
 
         <div class="page-foot">
-          <span class="mono">最近更新 2026 年 11 月</span>
+          <span class="mono">最近更新：待填写</span>
           <div style="display: flex; gap: 24px; flex-wrap: wrap">
             <a class="link-arrow" href="/travel.html">旅行轨迹
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>

@@ -102,20 +102,8 @@ function provincePath(f, tol) {
 const provinces = features.map((f) => ({ name: f.properties.name, d: provincePath(f, 0.6) }));
 
 const cities = [
-  { id: 'taiyuan', name: '太原', lon: 112.549, lat: 37.87, label: { dx: -12, dy: 4, anchor: 'end' } },
-  { id: 'yinchuan', name: '银川', lon: 106.232, lat: 38.487, label: { dx: -2, dy: -14, anchor: 'middle' } },
-  { id: 'beijing', name: '北京', lon: 116.407, lat: 39.904, label: { dx: 2, dy: -15, anchor: 'middle' } },
-  { id: 'xian', name: '西安', lon: 108.94, lat: 34.341, label: { dx: -13, dy: 12, anchor: 'end' } },
-  { id: 'tianjin', name: '天津', lon: 117.2, lat: 39.133, label: { dx: 14, dy: 6, anchor: 'start' } },
-  { id: 'chengdu', name: '成都', lon: 104.066, lat: 30.572, label: { dx: -13, dy: 8, anchor: 'end' } },
-  { id: 'chongqing', name: '重庆', lon: 106.551, lat: 29.563, label: { dx: 12, dy: 14, anchor: 'start' } },
-  { id: 'harbin', name: '哈尔滨', lon: 126.535, lat: 45.803, label: { dx: 2, dy: -14, anchor: 'middle' } },
-  { id: 'nanjing', name: '南京', lon: 118.797, lat: 32.06, label: { dx: -13, dy: 2, anchor: 'end' } },
-  { id: 'hangzhou', name: '杭州', lon: 120.155, lat: 30.274, label: { dx: 13, dy: 14, anchor: 'start' } },
-  { id: 'shanghai', name: '上海', lon: 121.474, lat: 31.23, label: { dx: 15, dy: -3, anchor: 'start' } },
-  { id: 'guangzhou', name: '广州', lon: 113.264, lat: 23.129, label: { dx: 12, dy: 14, anchor: 'start' } },
-  { id: 'qingdao', name: '青岛', lon: 120.383, lat: 36.067, label: { dx: 14, dy: -5, anchor: 'start' } },
-  { id: 'xiamen', name: '厦门', lon: 118.089, lat: 24.479, label: { dx: 12, dy: 14, anchor: 'start' } },
+  // 在这里添加城市。id 要和 travel.html 里 .trip 的 data-city 一致。
+  // { id: 'beijing', name: '北京', lon: 116.407, lat: 39.904, label: { dx: 2, dy: -15, anchor: 'middle' } },
 ];
 
 const pts = cities.map((c) => {

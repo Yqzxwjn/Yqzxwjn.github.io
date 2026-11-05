@@ -6,13 +6,13 @@
     <title>旅行轨迹 · 王嘉宁</title>
     <meta
       name="description"
-      content="从太原出发，走过 14 座城市。一张按时间连接的旅行地图，以及每座城市留下的一句话。"
+      content="一张按时间连接的旅行地图，和每座城市留下的一句话。"
     />
     <link rel="canonical" href="https://yqzxwjn.github.io/travel.html" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="旅行轨迹 · 王嘉宁" />
-    <meta property="og:description" content="14 座城市，14 个瞬间。地图按时间顺序连起走过的路。" />
+    <meta property="og:description" content="地图按时间顺序连起走过的城市。" />
     <meta property="og:url" content="https://yqzxwjn.github.io/travel.html" />
     <meta property="og:image" content="https://yqzxwjn.github.io/assets/img/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -67,7 +67,8 @@
       </div>
     </div>
 
-    <main id="main">
+        <main id="main">
+      <!-- 旅行页。行程写在下面的 .trip-list 里，地图由 tools/build-map.mjs 重新生成。 -->
       <header class="page-hero">
         <div class="container">
           <nav class="breadcrumb" aria-label="面包屑">
@@ -76,27 +77,27 @@
             <span>旅行</span>
           </nav>
           <p class="eyebrow" style="margin-top: 32px">03 — 旅行轨迹</p>
-          <h1 class="heading-1 page-hero__title">从太原出发，<br />走过 14 座城市。</h1>
+          <h1 class="heading-1 page-hero__title">把去过的城市，<br />连成一条线。</h1>
           <p class="body-3 page-hero__sub">
-            地图按时间顺序把去过的城市连起来。有些是比赛，有些是去见朋友，有些只是想在冬天看一次海。每座城市下面，是一句当时记下的话。
+            地图按时间顺序把城市连起来，每座城市下面是一句当时记下的话。现在还空着，正好从头开始。
           </p>
 
           <div class="travel-stats travel-stats--four">
             <div class="stat">
-              <p class="stat__num">14 <small>座</small></p>
+              <p class="stat__num is-empty">—</p>
               <p class="stat__label">去过的城市</p>
             </div>
             <div class="stat">
-              <p class="stat__num">14 <small>个</small></p>
+              <p class="stat__num is-empty">—</p>
               <p class="stat__label">省级行政区</p>
             </div>
             <div class="stat">
-              <p class="stat__num">19,240 <small>km</small></p>
+              <p class="stat__num is-empty">—</p>
               <p class="stat__label">累计路程</p>
             </div>
             <div class="stat">
-              <p class="stat__num">45.8 <small>°N</small></p>
-              <p class="stat__label">最北 · 哈尔滨</p>
+              <p class="stat__num is-empty">—</p>
+              <p class="stat__label">最北 · 待填写</p>
             </div>
           </div>
         </div>
@@ -107,7 +108,7 @@
           <div class="map-scroll">
             <svg class="map-svg" viewBox="0 0 1000 720" role="img" aria-labelledby="mapTitle mapDesc" preserveAspectRatio="xMidYMid meet">
   <title id="mapTitle">旅行轨迹地图</title>
-  <desc id="mapDesc">中国地图，标注了 14 座去过的城市，并按时间顺序连线。</desc>
+  <desc id="mapDesc">中国地图。添加城市之后，去过的城市与时间顺序连线会出现在这里。</desc>
   <defs>
     <pattern id="mapGrid" width="56" height="56" patternUnits="userSpaceOnUse">
       <path d="M56 0H0V56" fill="none" stroke="rgba(26,23,18,0.07)" stroke-width="1"/>
@@ -151,93 +152,6 @@
       <path d="M680.4 599.8L684.1 598.7L685.4 599.3L683.6 600.8L685.2 599.8L686.6 600.5L686 602.2L684.7 601.5L685.4 603.5L684.5 603.1L684.7 604.7L681.3 602.8L680.3 605L677.9 605.5L678.5 603.4L680.6 602.5L678.8 602.3L678.7 601.5L680.4 599.8ZM682.7 604.7L682.4 605.3L682.7 604.7Z" class="province" data-province="香港特别行政区"/>
       <path d="M673.2 607.4L673.2 605.5L674 606.9L673.2 607.4Z" class="province" data-province="澳门特别行政区"/>
   </g>
-  <g class="map-routes" aria-hidden="true">
-    <path d="M635.6 330.2Q593.9 311.1 549.6 323" class="route" data-from="taiyuan" data-to="yinchuan"/>
-    <path d="M549.6 323Q622.7 330.2 683.6 289.1" class="route" data-from="yinchuan" data-to="beijing"/>
-    <path d="M683.6 289.1Q617.1 325.6 589.1 396.1" class="route" data-from="beijing" data-to="xian"/>
-    <path d="M589.1 396.1Q659.5 368 695.8 301.5" class="route" data-from="xian" data-to="tianjin"/>
-    <path d="M695.8 301.5Q589.8 363.8 519 464.3" class="route" data-from="tianjin" data-to="chengdu"/>
-    <path d="M519 464.3Q534.5 479.9 556.4 482.1" class="route" data-from="chengdu" data-to="chongqing"/>
-    <path d="M556.4 482.1Q695.7 338.9 793.3 164.6" class="route" data-from="chongqing" data-to="harbin"/>
-    <path d="M793.3 164.6Q738.5 288.5 734.4 423.9" class="route" data-from="harbin" data-to="nanjing"/>
-    <path d="M734.4 423.9Q741.6 442.6 759 452.4" class="route" data-from="nanjing" data-to="hangzhou"/>
-    <path d="M759 452.4Q770.9 445.4 775.6 432.5" class="route" data-from="hangzhou" data-to="shanghai"/>
-    <path d="M775.6 432.5Q699.9 496.5 667 590" class="route" data-from="shanghai" data-to="guangzhou"/>
-    <path d="M667 590Q731.4 478.1 746.4 349.8" class="route" data-from="guangzhou" data-to="qingdao"/>
-    <path d="M746.4 349.8Q718.1 453.4 741.8 558.2" class="route" data-from="qingdao" data-to="xiamen"/>
-  </g>
-  <g class="map-cities">
-    <g class="city is-home" data-city="taiyuan" role="button" tabindex="0" aria-label="太原，2021 年">
-      <circle class="city-hit" cx="635.6" cy="330.2" r="18"/>
-      <circle class="city-dot" cx="635.6" cy="330.2" r="5"/>
-      <text class="city-label" x="623.6" y="334.2" text-anchor="end">太原</text>
-    </g>
-    <g class="city" data-city="yinchuan" role="button" tabindex="0" aria-label="银川，2022 年">
-      <circle class="city-hit" cx="549.6" cy="323" r="18"/>
-      <circle class="city-dot" cx="549.6" cy="323" r="3.6"/>
-      <text class="city-label" x="547.6" y="309" text-anchor="middle">银川</text>
-    </g>
-    <g class="city" data-city="beijing" role="button" tabindex="0" aria-label="北京，2023 年">
-      <circle class="city-hit" cx="683.6" cy="289.1" r="18"/>
-      <circle class="city-dot" cx="683.6" cy="289.1" r="3.6"/>
-      <text class="city-label" x="685.6" y="274.1" text-anchor="middle">北京</text>
-    </g>
-    <g class="city" data-city="xian" role="button" tabindex="0" aria-label="西安，2023 年">
-      <circle class="city-hit" cx="589.1" cy="396.1" r="18"/>
-      <circle class="city-dot" cx="589.1" cy="396.1" r="3.6"/>
-      <text class="city-label" x="576.1" y="408.1" text-anchor="end">西安</text>
-    </g>
-    <g class="city" data-city="tianjin" role="button" tabindex="0" aria-label="天津，2024 年">
-      <circle class="city-hit" cx="695.8" cy="301.5" r="18"/>
-      <circle class="city-dot" cx="695.8" cy="301.5" r="3.6"/>
-      <text class="city-label" x="709.8" y="307.5" text-anchor="start">天津</text>
-    </g>
-    <g class="city" data-city="chengdu" role="button" tabindex="0" aria-label="成都，2024 年">
-      <circle class="city-hit" cx="519" cy="464.3" r="18"/>
-      <circle class="city-dot" cx="519" cy="464.3" r="3.6"/>
-      <text class="city-label" x="506" y="472.3" text-anchor="end">成都</text>
-    </g>
-    <g class="city" data-city="chongqing" role="button" tabindex="0" aria-label="重庆，2024 年">
-      <circle class="city-hit" cx="556.4" cy="482.1" r="18"/>
-      <circle class="city-dot" cx="556.4" cy="482.1" r="3.6"/>
-      <text class="city-label" x="568.4" y="496.1" text-anchor="start">重庆</text>
-    </g>
-    <g class="city" data-city="harbin" role="button" tabindex="0" aria-label="哈尔滨，2024 年">
-      <circle class="city-hit" cx="793.3" cy="164.6" r="18"/>
-      <circle class="city-dot" cx="793.3" cy="164.6" r="3.6"/>
-      <text class="city-label" x="795.3" y="150.6" text-anchor="middle">哈尔滨</text>
-    </g>
-    <g class="city" data-city="nanjing" role="button" tabindex="0" aria-label="南京，2025 年">
-      <circle class="city-hit" cx="734.4" cy="423.9" r="18"/>
-      <circle class="city-dot" cx="734.4" cy="423.9" r="3.6"/>
-      <text class="city-label" x="721.4" y="425.9" text-anchor="end">南京</text>
-    </g>
-    <g class="city" data-city="hangzhou" role="button" tabindex="0" aria-label="杭州，2025 年">
-      <circle class="city-hit" cx="759" cy="452.4" r="18"/>
-      <circle class="city-dot" cx="759" cy="452.4" r="3.6"/>
-      <text class="city-label" x="772" y="466.4" text-anchor="start">杭州</text>
-    </g>
-    <g class="city" data-city="shanghai" role="button" tabindex="0" aria-label="上海，2025 年">
-      <circle class="city-hit" cx="775.6" cy="432.5" r="18"/>
-      <circle class="city-dot" cx="775.6" cy="432.5" r="3.6"/>
-      <text class="city-label" x="790.6" y="429.5" text-anchor="start">上海</text>
-    </g>
-    <g class="city" data-city="guangzhou" role="button" tabindex="0" aria-label="广州，2025 年">
-      <circle class="city-hit" cx="667" cy="590" r="18"/>
-      <circle class="city-dot" cx="667" cy="590" r="3.6"/>
-      <text class="city-label" x="679" y="604" text-anchor="start">广州</text>
-    </g>
-    <g class="city" data-city="qingdao" role="button" tabindex="0" aria-label="青岛，2026 年">
-      <circle class="city-hit" cx="746.4" cy="349.8" r="18"/>
-      <circle class="city-dot" cx="746.4" cy="349.8" r="3.6"/>
-      <text class="city-label" x="760.4" y="344.8" text-anchor="start">青岛</text>
-    </g>
-    <g class="city" data-city="xiamen" role="button" tabindex="0" aria-label="厦门，2026 年">
-      <circle class="city-hit" cx="741.8" cy="558.2" r="18"/>
-      <circle class="city-dot" cx="741.8" cy="558.2" r="3.6"/>
-      <text class="city-label" x="753.8" y="572.2" text-anchor="start">厦门</text>
-    </g>
-  </g>
   <g class="map-annot" aria-hidden="true">
     <text x="30" y="28" class="annot">CHINA / 35°N 105°E</text>
     <text x="970" y="28" text-anchor="end" class="annot">ALBERS EQUAL AREA</text>
@@ -253,120 +167,33 @@
           </div>
           <div class="map-note">
             <span>投影 ALBERS EQUAL AREA · 数据 中国行政区划边界</span>
-            <span>悬停或点按城市，可高亮同一段路线</span>
+            <span>添加城市后，点与连线会出现在这里</span>
           </div>
         </div>
 
         <div class="trip-list">
-          <div class="trip-year">
-            <span class="trip-year__label">2021</span>
-            <div class="trip-year__rows">
-              <div class="trip" data-city="taiyuan">
-                <span class="trip__city">太原</span>
-                <span class="trip__note">出发点。在这里读完高中，也在这里第一次听说“世界模型”这个词。</span>
-                <span class="trip__coord">112.5°E 37.9°N</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trip-year">
-            <span class="trip-year__label">2022</span>
-            <div class="trip-year__rows">
-              <div class="trip" data-city="yinchuan">
-                <span class="trip__city">银川</span>
-                <span class="trip__note">贺兰山下看到整片星空，冷得一句话都说不出来。</span>
-                <span class="trip__coord">106.2°E 38.5°N</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trip-year">
-            <span class="trip-year__label">2023</span>
-            <div class="trip-year__rows">
-              <div class="trip" data-city="beijing">
-                <span class="trip__city">北京</span>
-                <span class="trip__note">在国家图书馆待到闭馆，出来时正好下雪。</span>
-                <span class="trip__coord">116.4°E 39.9°N</span>
-              </div>
-              <div class="trip" data-city="xian">
-                <span class="trip__city">西安</span>
-                <span class="trip__note">城墙根下一碗泡馍，汤比想象中咸。</span>
-                <span class="trip__coord">108.9°E 34.3°N</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trip-year">
-            <span class="trip-year__label">2024</span>
-            <div class="trip-year__rows">
-              <div class="trip" data-city="tianjin">
-                <span class="trip__city">天津</span>
-                <span class="trip__note">海河边的风很硬，摩天轮那天没有开。</span>
-                <span class="trip__coord">117.2°E 39.1°N</span>
-              </div>
-              <div class="trip" data-city="chengdu">
-                <span class="trip__city">成都</span>
-                <span class="trip__note">人民公园的茶碗续了三次水，一下午只做了这一件事。</span>
-                <span class="trip__coord">104.1°E 30.6°N</span>
-              </div>
-              <div class="trip" data-city="chongqing">
-                <span class="trip__city">重庆</span>
-                <span class="trip__note">导航在这里失效，索性跟着坡走。</span>
-                <span class="trip__coord">106.6°E 29.6°N</span>
-              </div>
-              <div class="trip" data-city="harbin">
-                <span class="trip__city">哈尔滨</span>
-                <span class="trip__note">零下二十八度，手机先关机了。</span>
-                <span class="trip__coord">126.5°E 45.8°N</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trip-year">
-            <span class="trip-year__label">2025</span>
-            <div class="trip-year__rows">
-              <div class="trip" data-city="nanjing">
-                <span class="trip__city">南京</span>
-                <span class="trip__note">梧桐把光切成碎片，落在旧墙上。</span>
-                <span class="trip__coord">118.8°E 32.1°N</span>
-              </div>
-              <div class="trip" data-city="hangzhou">
-                <span class="trip__city">杭州</span>
-                <span class="trip__note">西湖的雨把行程全打乱，索性在廊下坐了两小时。</span>
-                <span class="trip__coord">120.2°E 30.3°N</span>
-              </div>
-              <div class="trip" data-city="shanghai">
-                <span class="trip__city">上海</span>
-                <span class="trip__note">外滩到张江，两小时地铁，两个世界。</span>
-                <span class="trip__coord">121.5°E 31.2°N</span>
-              </div>
-              <div class="trip" data-city="guangzhou">
-                <span class="trip__city">广州</span>
-                <span class="trip__note">早茶从八点吃到十一点，那天只安排了一件事。</span>
-                <span class="trip__coord">113.3°E 23.1°N</span>
-              </div>
-            </div>
-          </div>
-
+          <!-- 示例结构，取消注释后替换内容：
           <div class="trip-year">
             <span class="trip-year__label">2026</span>
             <div class="trip-year__rows">
-              <div class="trip" data-city="qingdao">
-                <span class="trip__city">青岛</span>
-                <span class="trip__note">冬天的海边没有人，只有浪和卖烤红薯的。</span>
-                <span class="trip__coord">120.4°E 36.1°N</span>
-              </div>
-              <div class="trip" data-city="xiamen">
-                <span class="trip__city">厦门</span>
-                <span class="trip__note">鼓浪屿的猫比游客多，也比游客从容。</span>
-                <span class="trip__coord">118.1°E 24.5°N</span>
+              <div class="trip" data-city="city-id">
+                <span class="trip__city">城市</span>
+                <span class="trip__note">在这里写一句当时记下的话。</span>
+                <span class="trip__coord">120.0°E 30.0°N</span>
               </div>
             </div>
+          </div>
+          -->
+          <div class="empty-state">
+            <span class="empty-state__label">待填写</span>
+            <p class="empty-state__text">
+              还没有行程。在 <code>travel.html</code> 里加一条 <code>.trip</code>，再在 <code>tools/build-map.mjs</code> 里补上城市和经纬度，运行一次就能生成新的地图。
+            </p>
           </div>
         </div>
 
         <div class="page-foot">
-          <span class="mono">记录方式：手写行程 + 车票照片</span>
+          <span class="mono">记录方式：<span class="ph">待填写</span></span>
           <a class="link-arrow" href="/">
             回到首页
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>

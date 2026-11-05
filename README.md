@@ -4,12 +4,14 @@
 
 站点地址：https://yqzxwjn.github.io
 
+**站内原有内容已全部清空**，所有需要你填写的位置都用虚线标出来了，见下面的“填写指南”。
+
 ## 结构
 
 ```
 .
 ├── index.html              首页（研究、获奖、旅行预览、关于、FAQ、联系）
-├── research.html           研究项目详情与论文列表
+├── research.html           研究项目详情、论文、开放问题
 ├── travel.html             旅行地图与按年份的行程
 ├── resume.html             简历页，可直接打印或导出 PDF
 ├── 404.html                自定义 404
@@ -24,20 +26,34 @@
 │       └── og.png          社交分享图
 ├── robots.txt
 ├── sitemap.xml
-└── tools/build-map.mjs     重新生成旅行地图的脚本（可选）
+└── tools/build-map.mjs     重新生成旅行地图的脚本
 ```
 
-## 修改内容
+## 填写指南
 
-所有文字都直接写在 HTML 里，改完刷新就能看到。
+所有文字都直接写在 HTML 里，改完刷新页面就能看到。
 
-- **首页**：研究卡片在 `#work` 区块，奖项在 `#awards`，旅行数据在 `#travel`，关于与 FAQ 在后半部分。
-- **研究页**：每个 `<article class="project">` 是一个项目，三个小节分别是问题、方法、结果。
-- **旅行页**：`<div class="trip" data-city="...">` 的 `data-city` 要和地图上的城市 id 对应。地图由脚本生成，见下文。
-- **简历页**：`<section class="resume-block">` 对应教育、研究、获奖、技能四块。
-- **颜色与字体**：都在 `assets/css/style.css` 顶部的 `:root` 里。改 `--amber` 就能换掉主色。
+- **短字段**用 `<span class="ph">…</span>` 标出，会显示成灰色虚线文字，替换成你的内容即可。
+- **整段文字**用 `<div class="placeholder-block">` 或 `<span class="ph-text">` 标出。
+- **空状态**（旅行页的行程列表）用 `<div class="empty-state">`，填好后可以整段删掉。
+- 每处占位上方都有 HTML 注释，说明这里该写什么。
 
-> 站内的项目指标、奖项、里程、分数等数字是示例内容，发布前请替换成你自己的真实信息。保留不实数据会让整站的可信度打折。
+各页的待填位置：
+
+| 页面 | 位置 |
+|---|---|
+| 首页 | 三张研究卡片（标题、年份、一句话说明、标签、角色）、三个奖项行、关于段落、状态、FAQ 回答 |
+| 研究页 | 三个项目（名称、问题、方法、结果）、两篇论文、两个开放问题 |
+| 旅行页 | 四组统计、地图、按年份的行程 |
+| 简历页 | 教育、研究经历、获奖、技能 |
+
+### 添加内容
+
+- **加一个项目**：复制一整段 `<article class="project">`（研究页）和对应的 `<a class="work-card">`（首页），把 `id` 和链接改成一致。
+- **加一个奖项**：复制一段 `<div class="award">`。
+- **加一条行程**：复制 `travel.html` 里注释掉的那个 `.trip-year` 区块，`data-city` 要和地图上的城市 id 对应。
+- **换主色**：改 `assets/css/style.css` 顶部 `:root` 里的 `--amber`。
+- **换标题和简介**：每页 `<head>` 里的 `<title>`、`description`、`og:*`，别忘了改。
 
 ## 本地预览
 
@@ -73,7 +89,13 @@ git push -u origin main
 - 数据：中国行政区划边界，来自 https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
 - 简化：屏幕坐标下的 Douglas–Peucker，容差 0.6px
 
-重新生成：
+现在脚本里的城市数组是空的，只画底图。加城市时，先改 `tools/build-map.mjs` 里的 `cities`：
+
+```js
+{ id: 'beijing', name: '北京', lon: 116.407, lat: 39.904, label: { dx: 2, dy: -15, anchor: 'middle' } },
+```
+
+然后重新生成：
 
 ```bash
 cd tools
@@ -83,7 +105,7 @@ npm install d3-geo @mapbox/geojson-rewind
 node build-map.mjs
 ```
 
-脚本会覆盖 `assets/img/map-preview.svg`，并生成 `tools/map-inline.svg`。把后者整段替换到 `travel.html` 里 `<div class="map-scroll">` 内部即可。
+脚本会覆盖 `assets/img/map-preview.svg`，并生成 `tools/map-inline.svg`。把后者整段替换到 `travel.html` 里 `<div class="map-scroll">` 内部，再把对应行程写进 `.trip-list`。
 
 ## 字体
 

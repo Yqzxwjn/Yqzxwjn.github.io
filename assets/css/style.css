@@ -2352,3 +2352,65 @@ body.menu-open {
     page-break-inside: avoid;
   }
 }
+
+
+/* ---------- placeholders and empty states ---------- */
+.ph {
+  color: var(--fg-3);
+  border-bottom: 1px dashed var(--line-strong);
+  padding-bottom: 1px;
+}
+
+.ph-text {
+  color: var(--fg-3);
+}
+
+.stat__num.is-empty {
+  color: var(--fg-3);
+  font-weight: 400;
+}
+
+.placeholder-block {
+  max-width: 560px;
+  padding: var(--s-300);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  color: var(--fg-3);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.empty-state {
+  display: grid;
+  gap: var(--s-100);
+  justify-items: start;
+  padding: var(--s-600) var(--s-400);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-lg);
+  background: rgba(255, 253, 248, 0.6);
+}
+
+.empty-state__label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--amber);
+  text-transform: uppercase;
+}
+
+.empty-state__text {
+  max-width: 640px;
+  color: var(--fg-2);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.empty-state code {
+  padding: 1px 6px;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  background: var(--panel);
+  color: var(--fg);
+  font-family: var(--mono);
+  font-size: 12px;
+}
