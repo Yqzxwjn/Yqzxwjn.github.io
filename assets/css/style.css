@@ -135,6 +135,45 @@ main section p:first-of-type {
   margin-top: 16px;
 }
 
+/* 列表：获奖、旅行等 */
+.entries {
+  display: grid;
+  gap: 28px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 3.5em minmax(0, 1fr);
+  gap: 0 16px;
+}
+
+.entry__year {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 30px;
+  font-variant-numeric: tabular-nums;
+}
+
+.entry__body {
+  min-width: 0;
+}
+
+.entry__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.entry__meta {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 26px;
+}
+
 footer {
   margin-top: 96px;
   padding: 20px 0 64px;
@@ -235,6 +274,15 @@ footer {
 
   .toc {
     gap: 16px;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .entry__year {
+    line-height: 24px;
   }
 
   main section {
