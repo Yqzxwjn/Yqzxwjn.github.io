@@ -21,27 +21,31 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="masthead">
-        <h1>王嘉宁</h1>
-        <p class="affil">中北大学 · 软件工程</p>
-        <p class="contact">
-          <a href="mailto:2613042921@st.nuc.edu.cn">2613042921@st.nuc.edu.cn</a>
-          <span class="sep">·</span>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="/">王嘉宁</a>
+        <nav class="site-nav" aria-label="主要导航">
+          <a href="#about">简介</a>
+          <a href="#research">研究</a>
+          <a href="#awards">获奖</a>
+          <a href="#travel">旅行</a>
+          <a href="/resume.html">简历</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="profile" aria-label="个人信息">
+        <div class="avatar" aria-hidden="true">王</div>
+        <p class="profile-affil">中北大学 · 软件工程</p>
+        <p class="profile-links">
+          <a href="mailto:2613042921@st.nuc.edu.cn">邮箱</a>
           <a href="https://github.com/Yqzxwjn" rel="me noopener">GitHub</a>
         </p>
-      </header>
+      </aside>
 
-      <nav class="toc" aria-label="页面导航">
-        <a href="#about">简介</a>
-        <a href="#research">研究</a>
-        <a href="#awards">获奖</a>
-        <a href="#travel">旅行</a>
-        <a href="/resume.html">简历</a>
-        <a href="#contact">联系</a>
-      </nav>
-
-      <main>
+      <main class="content">
         <section id="about" aria-labelledby="about-title">
           <h2 id="about-title">简介</h2>
           <!-- 在这里写两三句自我介绍。 -->
@@ -89,8 +93,10 @@
           <p><a href="https://github.com/Yqzxwjn" rel="noopener">github.com/Yqzxwjn</a></p>
         </section>
       </main>
-
-      <footer>© 2026 王嘉宁</footer>
     </div>
+
+    <footer class="site-footer">
+      <p>© 2026 王嘉宁</p>
+    </footer>
   </body>
 </html>
