@@ -174,6 +174,25 @@ main section p:first-of-type {
   line-height: 26px;
 }
 
+.certificate {
+  max-width: 420px;
+  margin: 20px 0 0;
+}
+
+.certificate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.certificate figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--muted);
+}
+
 footer {
   margin-top: 96px;
   padding: 20px 0 64px;
