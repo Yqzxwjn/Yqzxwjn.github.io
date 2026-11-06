@@ -6,7 +6,7 @@
     <title>简历 · 王嘉宁</title>
     <meta name="description" content="王嘉宁的简历。" />
     <link rel="canonical" href="https://yqzxwjn.github.io/resume.html" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fcfdff" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,16 +17,20 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" id="siteHeader">
       <div class="header-inner">
-        <a class="site-name" href="/">王嘉宁</a>
+        <a class="brand" href="/home.html">
+          <span class="brand-mark" aria-hidden="true">王</span>
+          <span class="brand-text">王嘉宁 <small>个人主页</small></span>
+        </a>
         <nav class="site-nav" aria-label="主要导航">
-          <a href="/#about">简介</a>
-          <a href="/#research">研究</a>
-          <a href="/#awards">获奖</a>
-          <a href="/#travel">旅行</a>
-          <a href="/resume.html" aria-current="page">简历</a>
-          <a href="/#contact">联系</a>
+          <a href="/home.html#about">简介</a>
+          <a href="/home.html#research">研究</a>
+          <a href="/home.html#awards">获奖</a>
+          <a href="/home.html#travel">旅行</a>
+          <a href="/resume.html" class="is-active" aria-current="page">简历</a>
+          <a href="/home.html#contact">联系</a>
+          <a class="nav-exit" href="/">起始页</a>
         </nav>
       </div>
     </header>
@@ -35,37 +39,62 @@
       <aside class="profile" aria-label="个人信息">
         <img class="avatar" src="/assets/img/portrait.jpg" alt="王嘉宁" width="295" height="413" />
         <p class="profile-affil">中北大学 · 软件工程</p>
-        <p class="profile-links">
-          <a href="mailto:2613042921@st.nuc.edu.cn">邮箱</a>
-          <a href="https://github.com/Yqzxwjn" rel="me noopener">GitHub</a>
-        </p>
+        <ul class="profile-meta">
+          <li><span>邮箱</span><a href="mailto:2613042921@st.nuc.edu.cn">写信</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Yqzxwjn" rel="me noopener">Yqzxwjn</a></li>
+        </ul>
+        <a class="resume-cta" href="/home.html">返回主页 <span aria-hidden="true">→</span></a>
       </aside>
 
       <main class="content">
-        <section id="education" aria-labelledby="education-title">
-          <h2 id="education-title">教育背景</h2>
+        <p class="resume-back"><a href="/home.html">← 返回主页</a></p>
+
+        <section class="section" id="education" aria-labelledby="education-title">
+          <div class="section-head">
+            <span class="section-index">01</span>
+            <h2 id="education-title">教育背景</h2>
+          </div>
           <!-- 学校、专业、学位、起止时间。 -->
         </section>
 
-        <section id="experience" aria-labelledby="experience-title">
-          <h2 id="experience-title">研究经历</h2>
+        <section class="section" id="experience" aria-labelledby="experience-title">
+          <div class="section-head">
+            <span class="section-index">02</span>
+            <h2 id="experience-title">研究经历</h2>
+          </div>
           <!-- 时间、项目、角色、做了什么、结果。 -->
         </section>
 
-        <section id="awards" aria-labelledby="awards-title">
-          <h2 id="awards-title">获奖</h2>
+        <section class="section" id="awards" aria-labelledby="awards-title">
+          <div class="section-head">
+            <span class="section-index">03</span>
+            <h2 id="awards-title">获奖</h2>
+          </div>
           <!-- 年份、奖项、级别。 -->
         </section>
 
-        <section id="skills" aria-labelledby="skills-title">
-          <h2 id="skills-title">技能</h2>
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <div class="section-head">
+            <span class="section-index">04</span>
+            <h2 id="skills-title">技能</h2>
+          </div>
           <!-- 编程语言、工具、语言能力。 -->
         </section>
       </main>
     </div>
 
     <footer class="site-footer">
-      <p>© 2026 王嘉宁</p>
+      <div class="footer-inner">
+        <span>© 2026 王嘉宁</span>
+        <div class="footer-links">
+          <a href="/">起始页</a>
+          <a href="/home.html">主页</a>
+          <a href="/privacy.html">隐私说明</a>
+          <a href="/terms.html">使用条款</a>
+        </div>
+      </div>
     </footer>
+
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>

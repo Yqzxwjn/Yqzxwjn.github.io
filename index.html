@@ -10,7 +10,7 @@
     <meta property="og:title" content="王嘉宁" />
     <meta property="og:description" content="个人主页。" />
     <meta property="og:url" content="https://yqzxwjn.github.io/" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0a1526" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,103 +20,26 @@
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="site-name" href="/">王嘉宁</a>
-        <nav class="site-nav" aria-label="主要导航">
-          <a href="#about">简介</a>
-          <a href="#research">研究</a>
-          <a href="#awards">获奖</a>
-          <a href="#travel">旅行</a>
-          <a href="/resume.html">简历</a>
-          <a href="#contact">联系</a>
-        </nav>
+  <!-- 起始页背景：把一张横版照片放到 assets/img/hero.jpg 即可（建议 2400px 宽、横向构图）。 -->
+  <body class="splash">
+    <main class="splash">
+      <div class="splash-inner">
+        <p class="splash-kicker">Personal Site</p>
+        <h1>王嘉宁</h1>
+        <p class="splash-sub">中北大学 · 软件工程</p>
+        <a class="enter" href="/home.html">
+          进入主页
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </a>
       </div>
-    </header>
 
-    <div class="layout">
-      <aside class="profile" aria-label="个人信息">
-        <img class="avatar" src="/assets/img/portrait.jpg" alt="王嘉宁" width="295" height="413" />
-        <p class="profile-affil">中北大学 · 软件工程</p>
-        <p class="profile-links">
-          <a href="mailto:2613042921@st.nuc.edu.cn">邮箱</a>
-          <a href="https://github.com/Yqzxwjn" rel="me noopener">GitHub</a>
-        </p>
-      </aside>
-
-      <main class="content">
-        <section id="about" aria-labelledby="about-title">
-          <h2 id="about-title">简介</h2>
-          <!-- 在这里写两三句自我介绍。 -->
-        </section>
-
-        <section id="research" aria-labelledby="research-title">
-          <h2 id="research-title">研究</h2>
-          <!-- 在这里列出研究项目：名称、时间、你的角色、一句话结论。 -->
-        </section>
-
-        <section id="awards" aria-labelledby="awards-title">
-          <h2 id="awards-title">获奖</h2>
-          <ul class="entries">
-            <li class="entry">
-              <span class="entry__year">2026</span>
-              <div class="entry__body">
-                <p class="entry__title">iCAN 大学生创新创业大赛 · 快手 AI 未来挑战赛，省级一等奖</p>
-                <p class="entry__meta">AI 驱动的鸿蒙模块复用工坊：通过四级筛选机制，降低 Token 消耗。</p>
-                <figure class="certificate">
-                  <a href="/assets/img/ican-2026.webp" target="_blank" rel="noopener" aria-label="查看证书原图">
-                    <img
-                      src="/assets/img/ican-2026.webp"
-                      width="1600"
-                      height="1067"
-                      alt="2026 年 iCAN 大学生创新创业大赛快手 AI 未来挑战赛一等奖证书"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </a>
-                  <figcaption>获奖证书 · 2026 年 10 月 · <a href="/assets/img/ican-2026.webp" target="_blank" rel="noopener">查看原图</a></figcaption>
-                </figure>
-              </div>
-            </li>
-            <li class="entry">
-              <span class="entry__year">2026</span>
-              <div class="entry__body">
-                <p class="entry__title">iCAN 大学生创新创业大赛 · 无代码智能体挑战赛，省级三等奖</p>
-                <p class="entry__meta">合同扫雷：签字前的风险预估智能体。</p>
-                <figure class="certificate">
-                  <a href="/assets/img/ican-2026-2.webp" target="_blank" rel="noopener" aria-label="查看证书原图">
-                    <img
-                      src="/assets/img/ican-2026-2.webp"
-                      width="1600"
-                      height="1067"
-                      alt="2026 年 iCAN 大学生创新创业大赛 AI 无代码智能体挑战赛三等奖证书"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </a>
-                  <figcaption>获奖证书 · 2026 年 10 月 · <a href="/assets/img/ican-2026-2.webp" target="_blank" rel="noopener">查看原图</a></figcaption>
-                </figure>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section id="travel" aria-labelledby="travel-title">
-          <h2 id="travel-title">旅行</h2>
-          <!-- 在这里列出城市和年份，可以一句话说明。 -->
-        </section>
-
-        <section id="contact" aria-labelledby="contact-title">
-          <h2 id="contact-title">联系</h2>
-          <p><a href="mailto:2613042921@st.nuc.edu.cn">2613042921@st.nuc.edu.cn</a></p>
-          <p><a href="https://github.com/Yqzxwjn" rel="noopener">github.com/Yqzxwjn</a></p>
-        </section>
-      </main>
-    </div>
-
-    <footer class="site-footer">
-      <p>© 2026 王嘉宁</p>
-    </footer>
+      <footer class="splash-foot">
+        <a href="mailto:2613042921@st.nuc.edu.cn">邮箱</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/Yqzxwjn" rel="noopener">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <span>© 2026 王嘉宁</span>
+      </footer>
+    </main>
   </body>
 </html>
