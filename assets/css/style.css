@@ -128,16 +128,13 @@ h2 {
 }
 
 .avatar {
-  display: grid;
-  place-items: center;
-  width: 96px;
-  height: 96px;
+  display: block;
+  width: 132px;
+  height: 176px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
   border-radius: 4px;
   background: var(--blue-soft);
-  color: var(--blue);
-  font-size: 38px;
-  line-height: 1;
-  font-weight: 600;
 }
 
 .profile-affil {
@@ -352,8 +349,7 @@ h2 {
   .avatar {
     grid-area: avatar;
     width: 72px;
-    height: 72px;
-    font-size: 30px;
+    height: 96px;
   }
 
   .profile-affil {

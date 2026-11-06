@@ -34,7 +34,7 @@
 - **旅行**：城市和年份。
 - **简历**：教育、研究经历、获奖、技能。
 
-侧栏的头像现在是蓝底“王”字占位，换照片时把 `<div class="avatar">王</div>` 换成 `<img class="avatar" src="/assets/img/photo.jpg" alt="王嘉宁">` 即可。
+侧栏头像是 `assets/img/portrait.jpg`。换照片时替换这个文件即可；如果比例不同，在 `style.css` 里调 `.avatar` 的宽高。
 
 ## 设计
 
