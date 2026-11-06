@@ -58,10 +58,10 @@ body.splash {
   color: #ffffff;
   background-color: #0a1526;
   background-image:
-    radial-gradient(680px 460px at 72% 26%, rgba(74, 134, 214, 0.36), transparent 70%),
-    radial-gradient(620px 520px at 20% 78%, rgba(30, 90, 170, 0.32), transparent 72%),
-    linear-gradient(180deg, rgba(4, 10, 22, 0.42), rgba(4, 10, 22, 0.18) 45%, rgba(4, 10, 22, 0.62)),
-    url("/assets/img/hero.jpg?v=2");
+    linear-gradient(0deg, rgba(2, 7, 16, 0.92), rgba(2, 7, 16, 0) 28%),
+    radial-gradient(1200px 760px at 50% 46%, rgba(3, 10, 24, 0.58), rgba(3, 10, 24, 0) 72%),
+    linear-gradient(180deg, rgba(3, 10, 22, 0.5), rgba(3, 10, 22, 0.12) 42%, rgba(3, 10, 22, 0.55)),
+    url("/assets/img/hero.jpg?v=3");
   background-size: cover;
   background-position: center;
 }
@@ -158,12 +158,13 @@ body.splash {
   padding: 0 24px 32px;
   font-size: 13px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.62);
+  color: rgba(255, 255, 255, 0.78);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
 }
 
 .splash-foot a {
-  color: rgba(255, 255, 255, 0.82);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .splash-foot a:hover {
